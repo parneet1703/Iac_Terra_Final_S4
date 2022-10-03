@@ -48,7 +48,7 @@ jobs:
 
       - name: terraform init
         run:
-          terraform init -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$fresh.tfstate" -backend-config="dynamodb_table=$dynamodb_table"
+          terraform init -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$tfstate_file" -backend-config="dynamodb_table=$dynamodb_table"
       - name: terraform plan
         run:
           terraform plan

@@ -3,6 +3,6 @@ terraform {
     # bucket = "parneet-bucket"
     # key    = "fresh.tfstate"
     # region = "us-east-1"
-    # dynamodb_table = "parneet-dytable"
+    # dynamodb_table = "parneet-dytable2"
   }
 }
